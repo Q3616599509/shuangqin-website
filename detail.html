@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>详情 — 上海爽勤 | 勤博士AI数字共创中心</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    /* ===== Detail Page Styles (Accenture-style) ===== */
+
+    /* Hero Header */
+    .detail-hero {
+      padding: calc(var(--nav-height) + var(--spacing-2xl)) 0 var(--spacing-2xl);
+      background: var(--color-primary-gradient);
+      color: var(--color-white);
+      position: relative;
+      overflow: hidden;
+    }
+    .detail-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    .detail-hero .container { position: relative; z-index: 1; }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: var(--font-size-sm);
+      color: rgba(255,255,255,0.7);
+      margin-bottom: var(--spacing-lg);
+    }
+    .breadcrumb a {
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { color: var(--color-white); text-decoration: underline; }
+    .breadcrumb-sep { color: rgba(255,255,255,0.4); }
+
+    .detail-hero h1 {
+      font-size: var(--font-size-5xl);
+      font-weight: 700;
+      margin-bottom: var(--spacing-md);
+      line-height: 1.2;
+    }
+    .detail-hero .detail-desc {
+      font-size: var(--font-size-xl);
+      color: rgba(255,255,255,0.85);
+      max-width: 800px;
+      line-height: 1.6;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    /* Highlights bar */
+    .detail-highlights-bar {
+      display: flex;
+      gap: var(--spacing-xl);
+      margin-top: var(--spacing-xl);
+      padding-top: var(--spacing-lg);
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .detail-highlight-item {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+    .detail-highlight-num {
+      font-size: var(--font-size-4xl);
+      font-weight: 700;
+      color: var(--color-accent-light);
+      line-height: 1;
+    }
+    .detail-highlight-text {
+      font-size: var(--font-size-sm);
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* Body Content */
+    .detail-body-section {
+      padding: var(--spacing-2xl) 0;
+    }
+    .detail-body-section:nth-child(even) {
+      background: var(--color-gray-50);
+    }
+
+    .detail-section-title {
+      font-size: var(--font-size-3xl);
+      font-weight: 700;
+      color: var(--color-gray-800);
+      margin-bottom: var(--spacing-md);
+    }
+    .detail-section-subtitle {
+      font-size: var(--font-size-lg);
+      color: var(--color-gray-600);
+      margin-bottom: var(--spacing-xl);
+      max-width: 800px;
+    }
+
+    /* Sub-items Grid (business detail) */
+    .detail-sub-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-lg);
+    }
+    .detail-sub-card {
+      background: var(--color-white);
+      border-radius: var(--border-radius-lg);
+      padding: var(--spacing-xl);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid var(--color-gray-200);
+    }
+    .detail-sub-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--color-primary-light);
+    }
+    .detail-sub-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-md);
+    }
+    .detail-sub-card h3 {
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: var(--color-gray-800);
+      margin-bottom: var(--spacing-sm);
+    }
+    .detail-sub-card p {
+      color: var(--color-gray-600);
+      font-size: var(--font-size-sm);
+      line-height: 1.6;
+      margin-bottom: var(--spacing-md);
+    }
+    .detail-sub-link {
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: var(--font-size-sm);
+    }
+
+    /* Table */
+    .detail-table-wrapper {
+      overflow-x: auto;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    .detail-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--color-white);
+    }
+    .detail-table th {
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 14px 18px;
+      text-align: left;
+      font-weight: 600;
+      font-size: var(--font-size-sm);
+    }
+    .detail-table th:first-child { border-radius: var(--border-radius) 0 0 0; }
+    .detail-table th:last-child { border-radius: 0 var(--border-radius) 0 0; }
+    .detail-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--color-gray-200);
+      font-size: var(--font-size-sm);
+      color: var(--color-gray-800);
+    }
+    .detail-table tr:last-child td { border-bottom: none; }
+    .detail-table tr:last-child td:first-child { border-radius: 0 0 0 var(--border-radius); }
+    .detail-table tr:last-child td:last-child { border-radius: 0 0 var(--border-radius) 0; }
+    .detail-table tr:hover td { background: var(--color-gray-50); }
+
+    /* Service Cards */
+    .detail-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-lg);
+    }
+    .detail-card {
+      background: var(--color-white);
+      border-radius: var(--border-radius-lg);
+      padding: var(--spacing-xl);
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--color-primary);
+      transition: var(--transition);
+    }
+    .detail-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateX(4px);
+    }
+    .detail-card-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--color-primary);
+      color: white;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--spacing-md);
+    }
+    .detail-card h3 {
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      color: var(--color-gray-800);
+      margin-bottom: var(--spacing-sm);
+    }
+    .detail-card p {
+      color: var(--color-gray-600);
+      font-size: var(--font-size-sm);
+      line-height: 1.7;
+    }
+
+    /* Empty state */
+    .detail-empty {
+      text-align: center;
+      color: var(--color-gray-400);
+      padding: var(--spacing-3xl);
+      background: var(--color-gray-50);
+      border-radius: var(--border-radius-lg);
+      border: 2px dashed var(--color-gray-200);
+    }
+
+    /* CTA Section */
+    .detail-cta-section {
+      text-align: center;
+      padding: var(--spacing-3xl) 0;
+      background: var(--color-secondary);
+      color: var(--color-white);
+    }
+    .detail-cta-section h3 {
+      font-size: var(--font-size-3xl);
+      font-weight: 700;
+      margin-bottom: var(--spacing-md);
+    }
+    .detail-cta-section p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: var(--spacing-xl);
+      font-size: var(--font-size-lg);
+    }
+
+    /* Responsive */
+    @media (max-width: 1023px) {
+      .detail-sub-grid { grid-template-columns: repeat(2, 1fr); }
+      .detail-cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 767px) {
+      .detail-hero h1 { font-size: var(--font-size-4xl); }
+      .detail-sub-grid { grid-template-columns: 1fr; }
+      .detail-table { font-size: var(--font-size-xs); }
+      .detail-table th, .detail-table td { padding: 10px 12px; }
+      .detail-highlights-bar { flex-wrap: wrap; gap: var(--spacing-md); }
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-container"></div>
+
+<!-- Hero Section -->
+<section class="detail-hero">
+  <div class="container">
+    <div id="breadcrumb" class="breadcrumb"></div>
+    <h1 id="detail-title"></h1>
+    <p id="detail-description" class="detail-desc"></p>
+    <div class="detail-highlights-bar" id="detail-highlights"></div>
+  </div>
+</section>
+
+<!-- Body Content -->
+<section class="detail-body-section">
+  <div class="container">
+    <h2 id="detail-subtitle" class="detail-section-title"></h2>
+    <div id="detail-body"></div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="detail-cta-section">
+  <div class="container">
+    <h3>想要了解更多？</h3>
+    <p>我们的专业团队随时为您提供咨询与服务</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">联系我们</a>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="assets/js/data-loader.js"></script>
+<script src="assets/js/renderer.js"></script>
+<script src="assets/js/detail-renderer.js"></script>
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/form.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  DataLoader.load().then(function(data) {
+    Renderer.renderNavigation(data);
+    Renderer.renderFooter(data);
+    DetailRenderer.renderContent(data);
+    if (typeof initNavigation === 'function') initNavigation();
+    if (typeof initScrollAnimations === 'function') initScrollAnimations();
+  }).catch(function(err) {
+    console.error('[Detail] 加载失败:', err);
+    document.getElementById('detail-title').textContent = '加载失败';
+    document.getElementById('detail-description').textContent = '请刷新页面重试';
+  });
+});
+</script>
+  <script src="assets/js/chat-widget.js"></script>
+</body>
+</html>
