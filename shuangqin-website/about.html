@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="上海爽勤管理咨询有限公司 — 关于我们，了解公司简介、创始人秦志勇博士及核心团队。">
+  <title>关于我们 — 上海爽勤 | 勤博士AI数字共创中心</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<div id="nav-container"></div>
+
+<section class="page-banner">
+  <div class="container">
+    <h1 class="page-banner-title fade-in-up">关于我们</h1>
+    <p class="page-banner-subtitle fade-in-up stagger-1">为数字而生 — 上海爽勤管理咨询有限公司</p>
+  </div>
+</section>
+
+<!-- 公司简介 -->
+<section class="section" id="intro">
+  <div class="container container-narrow">
+    <div class="section-header fade-in-up">
+      <span class="section-label">公司简介</span>
+      <h2 class="section-title">为数字而生</h2>
+    </div>
+    <div id="about-intro-container" class="fade-in-up stagger-1"></div>
+  </div>
+</section>
+
+<!-- 组织架构 -->
+<section class="section section-gray" id="structure">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">组织架构</span>
+      <h2 class="section-title">完善的组织体系</h2>
+    </div>
+    <div class="grid grid-3" id="departments-container"></div>
+  </div>
+</section>
+
+<!-- 创始人 -->
+<section class="section" id="founder">
+  <div class="container container-narrow">
+    <div class="section-header fade-in-up">
+      <span class="section-label">创始人</span>
+      <h2 class="section-title">创始人秦志勇博士</h2>
+    </div>
+    <div id="founder-container" class="fade-in-up stagger-1"></div>
+  </div>
+</section>
+
+<!-- 服务能力 -->
+<section class="section section-gray" id="capabilities">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">服务能力</span>
+      <h2 class="section-title">我们的核心能力</h2>
+    </div>
+    <div class="grid grid-2" id="capabilities-container"></div>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="assets/js/data-loader.js"></script>
+<script src="assets/js/renderer.js"></script>
+<script src="assets/js/dynamic-bg.js"></script>
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/form.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  Renderer.initPage(function(data) {
+    Renderer.renderAboutIntro(data);
+    Renderer.renderDepartments(data);
+    Renderer.renderFounder(data);
+    Renderer.renderCapabilities(data);
+  });
+});
+</script>
+  <script src="assets/js/chat-widget.js"></script>
+</body>
+</html>
