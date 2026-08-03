@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="勤博士AI数字共创中心 — 用AI+数字化赋能中小企业，双轮驱动模式，构建政产学研用协同创新生态。">
+  <title>勤博士AI数字共创中心 — 上海爽勤</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<div id="nav-container"></div>
+
+<section class="page-banner">
+  <div class="container">
+    <h1 class="page-banner-title fade-in-up">勤博士AI数字共创中心</h1>
+    <p class="page-banner-subtitle fade-in-up stagger-1">用AI+数字化赋能中小企业高质量发展</p>
+  </div>
+</section>
+
+<!-- 核心使命 -->
+<section class="section" id="mission">
+  <div class="container container-narrow">
+    <div class="section-header fade-in-up">
+      <span class="section-label">核心使命</span>
+      <h2 class="section-title">深度契合国家战略，聚焦中小企业数字化转型与AI人才培养的双重痛点</h2>
+    </div>
+    <div id="qinboshi-mission-container" class="fade-in-up stagger-1"></div>
+  </div>
+</section>
+
+<!-- 双轮驱动 -->
+<section class="section section-primary" id="dual-drive">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">商业模式</span>
+      <h2 class="section-title">To B + To C 双轮驱动</h2>
+      <p class="section-subtitle">企业与个人双轨并行，形成可持续的业务闭环</p>
+    </div>
+    <div class="dual-drive fade-in-up stagger-1" id="dual-drive-container"></div>
+  </div>
+</section>
+
+<!-- 三步走战略 -->
+<section class="section" id="strategy">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">发展战略</span>
+      <h2 class="section-title">三步走战略规划</h2>
+      <p class="section-subtitle">从区域标杆到全国性平台，最终构建AI+数字化人才与企业需求的精准匹配生态</p>
+    </div>
+    <div class="timeline" id="timeline-container"></div>
+  </div>
+</section>
+
+<!-- 政产学研用 -->
+<section class="section section-gray" id="ecosystem">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">协同创新</span>
+      <h2 class="section-title">政产学研用五位一体</h2>
+      <p class="section-subtitle">打破高校科研与企业需求之间的壁垒，构建协同创新生态</p>
+    </div>
+    <div class="eco-system fade-in-up" id="ecosystem-container"></div>
+    <div class="grid grid-2 fade-in-up stagger-1" style="margin-top:var(--spacing-2xl);" id="ecosystem-cards-container"></div>
+  </div>
+</section>
+
+<!-- 盈利模式 -->
+<section class="section" id="business-model">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">商业模式</span>
+      <h2 class="section-title">多元化混合盈利模式</h2>
+      <p class="section-subtitle">服务+培训+产品+分成，结合政策补贴，构筑健康可持续的商业生态</p>
+    </div>
+    <div class="grid grid-4" id="business-model-container"></div>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="assets/js/data-loader.js"></script>
+<script src="assets/js/renderer.js"></script>
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/form.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  Renderer.initPage(function(data) {
+    Renderer.renderQinboshiMission(data);
+    Renderer.renderDualDrive(data);
+    Renderer.renderTimeline(data);
+    Renderer.renderEcosystem(data);
+    Renderer.renderEcosystemCards(data);
+    Renderer.renderBusinessModel(data);
+  });
+});
+</script>
+  <script src="assets/js/chat-widget.js"></script>
+</body>
+</html>
