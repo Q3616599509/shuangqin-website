@@ -1,0 +1,128 @@
+/* CSS Design Tokens - 双主题系统 */
+
+/* ==================== 基础变量（不随主题变化） ==================== */
+:root {
+  /* Typography */
+  --font-sans: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Helvetica Neue', Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+  --spacing-4xl: 8rem;
+
+  /* Borders */
+  --border-radius-sm: 6px;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-full: 50%;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --max-width: 1200px;
+  --max-width-narrow: 900px;
+  --nav-height: 72px;
+  --section-padding: 100px;
+}
+
+/* ==================== 主题1：深紫科技风（默认） ==================== */
+[data-theme="purple"],
+:root:not([data-theme]) {
+  /* Primary Palette */
+  --color-primary: #4B0082;
+  --color-primary-dark: #2D0052;
+  --color-primary-light: #7B2D8E;
+  --color-primary-gradient: linear-gradient(135deg, #4B0082 0%, #2D0052 50%, #1a1a2e 100%);
+  --color-secondary: #1a1a2e;
+  --color-accent: #b8860b;
+  --color-accent-light: #d4a843;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f5f5f7;
+  --color-gray-200: #e8e8ed;
+  --color-gray-300: #d2d2d7;
+  --color-gray-400: #a1a1a6;
+  --color-gray-500: #86868b;
+  --color-gray-600: #6e6e73;
+  --color-gray-700: #48484d;
+  --color-gray-800: #1d1d1f;
+  --color-black: #000000;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.16);
+
+  /* Theme-specific decorative */
+  --theme-particle-color: rgba(184, 134, 11, 0.3);
+  --theme-glow-color: rgba(184, 134, 11, 0.15);
+  --theme-border-glow: linear-gradient(135deg, rgba(75, 0, 130, 0.3), rgba(184, 134, 11, 0.3), rgba(75, 0, 130, 0.3));
+  --theme-card-hover-bg: linear-gradient(135deg, rgba(75, 0, 130, 0.05), rgba(123, 45, 142, 0.05));
+  --theme-timeline-line: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+  --theme-hero-overlay: radial-gradient(ellipse at 20% 50%, rgba(123, 45, 142, 0.3) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, rgba(75, 0, 130, 0.3) 0%, transparent 50%),
+                        radial-gradient(ellipse at 50% 80%, rgba(26, 26, 46, 0.5) 0%, transparent 50%);
+}
+
+/* ==================== 主题2：绿色自然古风 ==================== */
+[data-theme="nature"] {
+  /* Primary Palette - 墨绿+竹青 */
+  --color-primary: #2d5a27;
+  --color-primary-dark: #1a3a15;
+  --color-primary-light: #4a8a3f;
+  --color-primary-gradient: linear-gradient(135deg, #2d5a27 0%, #1a3a15 50%, #0f2810 100%);
+  --color-secondary: #1e2e1a;
+  --color-accent: #c4956a;
+  --color-accent-light: #d4b896;
+
+  /* Neutrals - 暖白米色调 */
+  --color-white: #faf8f3;
+  --color-gray-50: #f5f2eb;
+  --color-gray-100: #ede8de;
+  --color-gray-200: #ddd5c5;
+  --color-gray-300: #c4b9a5;
+  --color-gray-400: #a89a82;
+  --color-gray-500: #8a7d68;
+  --color-gray-600: #6e6350;
+  --color-gray-700: #4a4236;
+  --color-gray-800: #2c2820;
+  --color-black: #1a1712;
+
+  /* Shadows - 更柔和的阴影 */
+  --shadow-sm: 0 2px 8px rgba(26, 23, 18, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 23, 18, 0.08);
+  --shadow-lg: 0 8px 32px rgba(26, 23, 18, 0.1);
+  --shadow-xl: 0 16px 48px rgba(26, 23, 18, 0.12);
+
+  /* Theme-specific decorative */
+  --theme-particle-color: rgba(196, 149, 106, 0.3);
+  --theme-glow-color: rgba(196, 149, 106, 0.15);
+  --theme-border-glow: linear-gradient(135deg, rgba(45, 90, 39, 0.3), rgba(196, 149, 106, 0.3), rgba(45, 90, 39, 0.3));
+  --theme-card-hover-bg: linear-gradient(135deg, rgba(45, 90, 39, 0.05), rgba(74, 138, 63, 0.05));
+  --theme-timeline-line: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+  --theme-hero-overlay: radial-gradient(ellipse at 20% 50%, rgba(74, 138, 63, 0.25) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, rgba(45, 90, 39, 0.25) 0%, transparent 50%),
+                        radial-gradient(ellipse at 50% 80%, rgba(15, 40, 16, 0.4) 0%, transparent 50%);
+}
