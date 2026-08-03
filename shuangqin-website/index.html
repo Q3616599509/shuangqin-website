@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="description" content="上海爽勤管理咨询有限公司 — 勤博士AI数字共创中心，用AI+数字化赋能中小企业高质量发展。提供管理咨询、数字化转型、AI算力与数据治理等全方位服务。">
+  <meta name="keywords" content="数字化转型,管理咨询,AI赋能,中小企业,勤博士,上海爽勤,数字共创">
+  <title>上海爽勤 | 勤博士AI数字共创中心 — 用AI+数字化赋能中小企业</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- ===== Navigation (JS动态渲染) ===== -->
+<div id="nav-container"></div>
+
+<!-- ===== Hero (JS动态渲染) ===== -->
+<div id="hero-container"></div>
+
+<!-- ===== 核心数据 ===== -->
+<section class="section section-gray" id="stats">
+  <div class="container">
+    <div class="stats-bar" id="stats-container"></div>
+  </div>
+</section>
+
+<!-- ===== 核心业务 ===== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">核心业务</span>
+      <h2 class="section-title">全方位数字化转型服务</h2>
+      <p class="section-subtitle">围绕企业与个人两大客户群体，构建多层次、全流程的产品与服务体系</p>
+    </div>
+    <div class="grid grid-3" id="core-business-container"></div>
+  </div>
+</section>
+
+<!-- ===== 产品体系 ===== -->
+<section class="section section-gray" id="products">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">产品体系</span>
+      <h2 class="section-title">管理咨询 · 数字支撑 · 资源共享</h2>
+      <p class="section-subtitle">构建从咨询到交付、从资源到系统的完整价值闭环</p>
+    </div>
+    <div class="grid grid-4" id="products-container"></div>
+  </div>
+</section>
+
+<!-- ===== 合作客户 ===== -->
+<section class="section" id="clients">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">合作客户</span>
+      <h2 class="section-title">值得信赖的合作伙伴</h2>
+      <p class="section-subtitle">服务覆盖金融、互联网、智能制造等核心行业，与行业领军企业建立深度合作</p>
+    </div>
+    <div class="client-categories fade-in-up" id="client-categories"></div>
+    <div class="client-grid fade-in-up stagger-1" id="clients-container"></div>
+  </div>
+</section>
+
+<!-- ===== 合作对象 ===== -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">合作对象</span>
+      <h2 class="section-title">多元化的合作生态</h2>
+      <p class="section-subtitle">覆盖金融科技、商业服务、中介平台等多类型合作伙伴</p>
+    </div>
+    <div class="grid grid-3" id="partners-container"></div>
+  </div>
+</section>
+
+<!-- ===== 勤博士AI数字共创中心 ===== -->
+<section class="section section-primary" id="qinboshi">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">勤博士AI数字共创中心</span>
+      <h2 class="section-title">双轮驱动，赋能中小企业</h2>
+      <p class="section-subtitle">采用To B与To C双轮驱动模式，一方面为企业提供数字化转型服务，另一方面为个人提供AI技能重塑，形成业务闭环</p>
+    </div>
+    <div class="dual-drive fade-in-up stagger-1" id="dual-drive-container"></div>
+  </div>
+</section>
+
+<!-- ===== 三步走战略 ===== -->
+<section class="section" id="strategy">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">发展战略</span>
+      <h2 class="section-title">三步走战略规划</h2>
+      <p class="section-subtitle">从区域标杆到全国性平台，最终构建AI+数字化人才与企业需求的精准匹配生态</p>
+    </div>
+    <div class="timeline" id="timeline-container"></div>
+  </div>
+</section>
+
+<!-- ===== 政产学研用生态 ===== -->
+<section class="section section-gray" id="ecosystem">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">协同创新生态</span>
+      <h2 class="section-title">政产学研用五位一体</h2>
+      <p class="section-subtitle">打破高校科研与企业需求之间的壁垒，构建协同创新生态，打造区域AI人才蓄水池与技术转化加速器</p>
+    </div>
+    <div class="eco-system fade-in-up" id="ecosystem-container"></div>
+  </div>
+</section>
+
+<!-- ===== 核心优势 ===== -->
+<section class="section section-dark" id="advantages">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">核心优势</span>
+      <h2 class="section-title">为什么选择我们</h2>
+      <p class="section-subtitle">以成熟的管理体系和专业团队，确保每一个项目的成功交付</p>
+    </div>
+    <div class="advantage-grid" id="advantages-container"></div>
+  </div>
+</section>
+
+<!-- ===== 联系我们 ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">联系我们</span>
+      <h2 class="section-title">开启数字化转型之旅</h2>
+      <p class="section-subtitle">无论您处于数字化转型的哪个阶段，我们都将为您提供专业、精准的服务</p>
+    </div>
+    <div class="contact-grid fade-in-up stagger-1">
+      <div class="contact-info" id="contact-info-container"></div>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">姓名 *</label>
+            <input type="text" class="form-input" placeholder="请输入您的姓名" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">公司</label>
+            <input type="text" class="form-input" placeholder="请输入您的公司名称">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">邮箱 *</label>
+            <input type="email" class="form-input" placeholder="请输入您的邮箱" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">电话</label>
+            <input type="tel" class="form-input" placeholder="请输入您的电话">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">需求描述 *</label>
+          <textarea class="form-textarea" placeholder="请简要描述您的需求，我们将为您提供针对性的解决方案" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%">发送咨询</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer (JS动态渲染) ===== -->
+<div id="footer-container"></div>
+
+<script src="assets/js/data-loader.js"></script>
+<script src="assets/js/renderer.js"></script>
+<script src="assets/js/dynamic-bg.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/form.js"></script>
+<script src="assets/js/chat-widget.js"></script>
+
+<!-- 主题切换器（内联，避免缓存问题） -->
+<script>
+(function(){
+  var saved = 'purple';
+  try { saved = localStorage.getItem('siteTheme') || 'purple'; } catch(e) {}
+  document.documentElement.setAttribute('data-theme', saved);
+
+  function createSwitcher() {
+    var s = document.createElement('div');
+    s.style.cssText = 'position:fixed;top:20px;right:20px;z-index:10001;display:flex;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.2);border-radius:50px;padding:6px 8px;';
+
+    var btn1 = document.createElement('button');
+    btn1.innerHTML = '\u26A1';
+    btn1.title = '深紫科技风';
+    btn1.style.cssText = 'width:32px;height:32px;border-radius:50%;border:2px solid transparent;cursor:pointer;font-size:14px;background:linear-gradient(135deg,#4B0082,#7B2D8E);color:#fff;display:flex;align-items:center;justify-content:center;transition:all 0.2s;';
+    btn1.onclick = function(){ setTheme('purple'); };
+
+    var btn2 = document.createElement('button');
+    btn2.innerHTML = '\uD83C\uDF3F';
+    btn2.title = '绿色自然古风';
+    btn2.style.cssText = 'width:32px;height:32px;border-radius:50%;border:2px solid transparent;cursor:pointer;font-size:14px;background:linear-gradient(135deg,#2d5a27,#4a8a3f);color:#fff;display:flex;align-items:center;justify-content:center;transition:all 0.2s;';
+    btn2.onclick = function(){ setTheme('nature'); };
+
+    s.appendChild(btn1);
+    s.appendChild(btn2);
+    document.body.appendChild(s);
+
+    window._themeBtns = [btn1, btn2];
+    updateBtns(saved);
+  }
+
+  function setTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    try { localStorage.setItem('siteTheme', t); } catch(e) {}
+    updateBtns(t);
+    // 刷新动态背景
+    if (window._refreshDynamicBackground) {
+      setTimeout(window._refreshDynamicBackground, 50);
+    }
+  }
+
+  function updateBtns(t) {
+    if (!window._themeBtns) return;
+    if (t === 'purple') {
+      window._themeBtns[0].style.borderColor = '#d4a843';
+      window._themeBtns[1].style.borderColor = 'transparent';
+    } else {
+      window._themeBtns[0].style.borderColor = 'transparent';
+      window._themeBtns[1].style.borderColor = '#d4a843';
+    }
+  }
+
+  window.setTheme = setTheme;
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createSwitcher);
+  } else {
+    createSwitcher();
+  }
+})();
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  Renderer.initPage(function(data) {
+    Renderer.renderHero(data);
+    Renderer.renderStats(data);
+    Renderer.renderCoreBusinesses(data);
+    Renderer.renderProducts(data);
+    Renderer.renderClients(data);
+    Renderer.renderPartners(data);
+    Renderer.renderDualDrive(data);
+    Renderer.renderTimeline(data);
+    Renderer.renderEcosystem(data);
+    Renderer.renderAdvantages(data);
+    Renderer.renderContactInfo(data);
+  });
+});
+</script>
+</body>
+</html>
