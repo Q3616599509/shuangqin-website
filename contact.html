@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="联系上海爽勤管理咨询有限公司 — 开启您的数字化转型之旅。">
+  <title>联系我们 — 上海爽勤 | 勤博士AI数字共创中心</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<div id="nav-container"></div>
+
+<section class="page-banner">
+  <div class="container">
+    <h1 class="page-banner-title fade-in-up">联系我们</h1>
+    <p class="page-banner-subtitle fade-in-up stagger-1">开启数字化转型之旅，我们期待与您的合作</p>
+  </div>
+</section>
+
+<section class="section" id="contact-form">
+  <div class="container">
+    <div class="contact-grid fade-in-up">
+      <div class="contact-info" id="info">
+        <h2 style="font-size:var(--font-size-3xl);font-weight:700;margin-bottom:var(--spacing-md);">联系方式</h2>
+        <p style="color:var(--color-gray-600);margin-bottom:var(--spacing-lg);">无论您处于数字化转型的哪个阶段，我们都将为您提供专业、精准的服务。欢迎随时联系我们。</p>
+        <div id="contact-info-container"></div>
+        <div style="margin-top:var(--spacing-xl);padding:var(--spacing-lg);background:var(--color-gray-50);border-radius:var(--border-radius-lg);border:1px solid var(--color-gray-200);">
+          <h4 style="font-weight:700;margin-bottom:var(--spacing-sm);color:var(--color-primary);">⚡ 服务响应承诺</h4>
+          <p style="font-size:var(--font-size-sm);color:var(--color-gray-600);line-height:1.6;">
+            我们提供<strong>7×24小时</strong>紧急事件服务响应。在接到现场支持要求后，承诺在<strong>2小时内</strong>做出实质响应，<strong>2-8小时</strong>内到达办公现场。全国所有地区均可提供驻场服务。
+          </p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <h2 style="font-size:var(--font-size-3xl);font-weight:700;margin-bottom:var(--spacing-md);">发送咨询</h2>
+        <p style="color:var(--color-gray-600);margin-bottom:var(--spacing-lg);">请填写以下表单，我们将尽快与您联系。</p>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">姓名 *</label><input type="text" class="form-input" placeholder="请输入您的姓名" required></div>
+          <div class="form-group"><label class="form-label">公司</label><input type="text" class="form-input" placeholder="请输入您的公司名称"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">邮箱 *</label><input type="email" class="form-input" placeholder="请输入您的邮箱" required></div>
+          <div class="form-group"><label class="form-label">电话</label><input type="tel" class="form-input" placeholder="请输入您的电话"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">服务类型</label>
+          <select class="form-input" style="appearance:auto;">
+            <option value="">请选择您感兴趣的服务</option>
+            <option value="consulting">管理咨询</option>
+            <option value="digital">数字化转型</option>
+            <option value="ai">AI算力与模型服务</option>
+            <option value="data">数据治理与智能运维</option>
+            <option value="training">AI技能培训</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">需求描述 *</label>
+          <textarea class="form-textarea" placeholder="请简要描述您的需求，包括项目背景、目标、预算范围等，我们将为您提供针对性的解决方案" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%">发送咨询</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="assets/js/data-loader.js"></script>
+<script src="assets/js/renderer.js"></script>
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/form.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  Renderer.initPage(function(data) {
+    Renderer.renderContactInfo(data);
+  });
+});
+</script>
+  <script src="assets/js/chat-widget.js"></script>
+</body>
+</html>
