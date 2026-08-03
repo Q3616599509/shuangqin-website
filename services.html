@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="上海爽勤核心业务 — 管理咨询、数字化转型、数字技术支撑，为企业提供全方位数字化服务。">
+  <title>核心业务 — 上海爽勤 | 勤博士AI数字共创中心</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<div id="nav-container"></div>
+
+<section class="page-banner">
+  <div class="container">
+    <h1 class="page-banner-title fade-in-up">核心业务</h1>
+    <p class="page-banner-subtitle fade-in-up stagger-1">管理咨询 · 数字化转型 · 数字技术支撑 — 构建多层次、全流程的产品与服务体系</p>
+  </div>
+</section>
+
+<!-- 管理咨询 -->
+<section class="section" id="consulting">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">核心业务一</span>
+      <h2 class="section-title">管理咨询</h2>
+      <p class="section-subtitle">依托高校知名教授资源与行业专家团队，提供从战略规划到落地执行的全链路管理咨询服务</p>
+    </div>
+    <div class="grid grid-3" id="consulting-items-container"></div>
+  </div>
+</section>
+
+<!-- 数字化转型 -->
+<section class="section section-gray" id="digital">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">核心业务二</span>
+      <h2 class="section-title">数字化转型</h2>
+      <p class="section-subtitle">覆盖从小微企业到中大型企业的全规模数字化转型服务</p>
+    </div>
+    <div class="grid grid-3" id="digital-items-container"></div>
+  </div>
+</section>
+
+<!-- 技术支撑 -->
+<section class="section" id="tech">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">核心业务三</span>
+      <h2 class="section-title">数字技术支撑</h2>
+      <p class="section-subtitle">依托强大的算力基座与数据治理能力，对外输出标准化的数字化技术服务</p>
+    </div>
+    <div class="grid grid-2" id="tech-items-container"></div>
+  </div>
+</section>
+
+<!-- 交付管理 -->
+<section class="section section-gray" id="delivery">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">交付保障</span>
+      <h2 class="section-title">成熟的项目交付管理体系</h2>
+    </div>
+    <div class="grid grid-3" id="delivery-container"></div>
+  </div>
+</section>
+
+<!-- 合作对象 -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">合作对象</span>
+      <h2 class="section-title">多元化的合作生态</h2>
+    </div>
+    <div class="grid grid-3" id="partners-container"></div>
+  </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="assets/js/data-loader.js"></script>
+<script src="assets/js/renderer.js"></script>
+<script src="assets/js/theme-switcher.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/form.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  Renderer.initPage(function(data) {
+    // 渲染管理咨询子项卡片
+    if (data.coreBusinesses && data.coreBusinesses[0] && data.coreBusinesses[0].details) {
+      Renderer.renderCards('consulting-items-container', data.coreBusinesses[0].details.items, 'sub', 'management-consulting');
+    }
+    // 渲染数字化转型子项卡片
+    if (data.coreBusinesses && data.coreBusinesses[1] && data.coreBusinesses[1].details) {
+      Renderer.renderCards('digital-items-container', data.coreBusinesses[1].details.items, 'sub', 'digital-transformation');
+    }
+    // 渲染技术支撑子项卡片
+    if (data.coreBusinesses && data.coreBusinesses[2] && data.coreBusinesses[2].details) {
+      Renderer.renderCards('tech-items-container', data.coreBusinesses[2].details.items, 'sub', 'ai-tech-support');
+    }
+    Renderer.renderDelivery(data);
+    Renderer.renderPartners(data);
+  });
+});
+</script>
+  <script src="assets/js/chat-widget.js"></script>
+</body>
+</html>
