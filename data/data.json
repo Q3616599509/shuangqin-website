@@ -1,0 +1,322 @@
+{
+  "site": {
+    "name": "勤博士AI数字共创中心",
+    "subtitle": "上海爽勤管理咨询有限公司",
+    "logoChar": "勤",
+    "description": "用AI+数字化赋能中小企业高质量发展",
+    "footerDescription": "致力于企业数字化转型研究，深耕电商、融资租赁、银行保险领域，为中小企业提供数字转型服务，提升企业在多变国际环境中的市场竞争力。",
+    "copyright": "© 2025 上海爽勤管理咨询有限公司. All rights reserved.",
+    "icp": "沪ICP备xxxxxxxx号"
+  },
+  "contact": {
+    "address": "上海市嘉定区",
+    "email": "contact@shuangqin.com",
+    "phone": "021-xxxx-xxxx",
+    "serviceHours": "周一至周五 9:00 - 18:00",
+    "emergencyHours": "紧急服务 7×24小时"
+  },
+  "emailConfig": {
+    "enabled": false,
+    "smtpHost": "smtp.exmail.qq.com",
+    "smtpPort": 465,
+    "smtpSsl": true,
+    "smtpUser": "",
+    "smtpPass": "",
+    "toEmail": ""
+  },
+  "stats": [
+    { "icon": "🏢", "number": 2019, "label": "年成立于上海嘉定" },
+    { "icon": "🤝", "number": 50, "suffix": "+", "label": "服务企业客户" },
+    { "icon": "🏭", "number": 3, "label": "大核心行业深耕" },
+    { "icon": "📊", "number": 100, "suffix": "+", "label": "成功交付项目" }
+  ],
+  "hero": {
+    "badge": "勤博士科技 · 为数字而生",
+    "titleHtml": "用<span>AI+数字化</span><br>赋能中小企业高质量发展",
+    "subtitle": "深度契合国家战略，聚焦中小企业数字化转型与AI人才培养的双重痛点\n以双轮驱动模式构建政产学研用五位一体协同创新生态",
+    "buttons": [
+      { "label": "了解我们的服务", "href": "services.html", "class": "btn-primary btn-lg" },
+      { "label": "立即咨询", "href": "contact.html", "class": "btn-outline btn-lg" }
+    ]
+  },
+  "coreBusinesses": [
+    {
+      "id": "management-consulting",
+      "icon": "📋",
+      "title": "管理咨询",
+      "description": "依托高校知名教授资源与行业专家团队，提供从战略规划到落地执行的全链路管理咨询服务，涵盖数字化咨询、组织变革与流程优化。",
+      "linkHref": "services.html",
+      "details": {
+        "subtitle": "依托高校知名教授资源与行业专家团队，提供从战略规划到落地执行的全链路管理咨询服务",
+        "items": [
+          {
+            "id": "university-resources",
+            "icon": "🎓",
+            "title": "高校资源",
+            "description": "联合知名高校教授团队，将前沿学术研究与企业管理实践深度融合，提供专业的管理理论与方法论指导。",
+            "detailType": "university",
+            "detailList": [
+              { "name": "复旦大学", "professor": "张教授", "specialty": "企业管理与数字化转型", "contact": "zhang@fudan.edu.cn" },
+              { "name": "上海交通大学", "professor": "李教授", "specialty": "人工智能与大数据", "contact": "li@sjtu.edu.cn" },
+              { "name": "同济大学", "professor": "王教授", "specialty": "智能制造与工业互联网", "contact": "wang@tongji.edu.cn" }
+            ]
+          },
+          {
+            "id": "industry-experts",
+            "icon": "👨‍💼",
+            "title": "行业专家",
+            "description": "汇聚电商、金融、制造等领域资深专家，以丰富的行业经验和实战能力，为企业提供精准的管理咨询服务。",
+            "detailType": "expert",
+            "detailList": [
+              { "name": "秦志勇博士", "field": "数字化转型", "experience": "20+年", "description": "IT老兵，深耕电商、融资租赁、银行保险领域" },
+              { "name": "陈专家", "field": "金融科技", "experience": "15年", "description": "曾任平安科技架构师，专注金融系统架构设计" },
+              { "name": "刘专家", "field": "电商运营", "experience": "12年", "description": "阿里巴巴前运营总监，擅长电商全链路优化" }
+            ]
+          },
+          {
+            "id": "digital-consulting",
+            "icon": "🔍",
+            "title": "数字化咨询",
+            "description": "以DESC方法论为驱动，为企业提供从数字化诊断、战略规划到实施路径的全方位数字化解决方案。",
+            "detailType": "service",
+            "detailList": [
+              { "title": "数字化成熟度评估", "description": "通过多维度评估模型，全面诊断企业数字化现状，识别痛点与机会点" },
+              { "title": "数字化战略规划", "description": "结合行业趋势与企业实际，制定3-5年数字化转型路线图" },
+              { "title": "实施路径设计", "description": "分阶段、分模块设计实施方案，确保落地可执行" },
+              { "title": "组织变革管理", "description": "配套组织架构调整、人才培养、文化建设等变革管理服务" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "digital-transformation",
+      "icon": "🔄",
+      "title": "数字化转型",
+      "description": "覆盖小微企业、成长型中小企业到中大型企业的全规模数字化转型服务，帮助企业在多变国际环境中提升市场竞争力。",
+      "linkHref": "services.html",
+      "details": {
+        "subtitle": "覆盖从小微企业到中大型企业的全规模数字化转型服务",
+        "items": [
+          {
+            "id": "micro-enterprise-digital",
+            "icon": "🌱",
+            "title": "小微企业数字化",
+            "description": "针对小微企业特点，提供轻量化、低成本的数字化解决方案，帮助快速实现业务流程线上化与管理规范化。",
+            "detailType": "service",
+            "detailList": [
+              { "title": "基础信息化建设", "description": "企业官网、小程序、公众号等基础数字触点搭建" },
+              { "title": "业务流程线上化", "description": "订单管理、客户管理、财务管理等核心流程数字化" },
+              { "title": "数字化工具包", "description": "提供适合小微企业的SaaS工具组合，按需订阅使用" }
+            ]
+          },
+          {
+            "id": "sme-growth-digital",
+            "icon": "📈",
+            "title": "中小企业成长数字化",
+            "description": "伴随企业成长，提供可扩展的数字化系统与服务，涵盖ERP、CRM、数据分析等核心业务系统。",
+            "detailType": "service",
+            "detailList": [
+              { "title": "ERP系统实施", "description": "适配企业规模的ERP系统选型、定制与部署" },
+              { "title": "CRM客户管理", "description": "构建全渠道客户管理体系，提升客户生命周期价值" },
+              { "title": "数据分析平台", "description": "搭建企业级数据仓库与BI分析平台，驱动数据决策" }
+            ]
+          },
+          {
+            "id": "large-enterprise-digital",
+            "icon": "🏗️",
+            "title": "中大型企业数字化转型",
+            "description": "面向中大型企业的深度数字化转型，包括系统架构升级、数据治理、AI应用落地与组织变革管理。",
+            "detailType": "service",
+            "detailList": [
+              { "title": "系统架构升级", "description": "微服务化改造、云原生迁移、遗留系统现代化" },
+              { "title": "数据治理体系", "description": "建立企业级数据标准、数据质量、数据安全体系" },
+              { "title": "AI应用落地", "description": "智能客服、智能营销、智能供应链等AI场景落地" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-tech-support",
+      "icon": "🤖",
+      "title": "AI数字技术支撑",
+      "description": "依托强大算力基座与数据治理能力，提供AI模型服务、智能运维与全景数字化技术服务，为客户持续创造价值。",
+      "linkHref": "qinboshi.html",
+      "details": {
+        "subtitle": "依托强大的算力基座与数据治理能力，对外输出标准化的数字化技术服务",
+        "items": [
+          {
+            "id": "ai-computing",
+            "icon": "🖥️",
+            "title": "AI算力与模型服务",
+            "description": "提供从算力基础设施到AI模型训练、部署、优化的全栈服务，帮助企业快速构建AI能力，降低技术门槛与投入成本。",
+            "detailType": "service",
+            "detailList": [
+              { "title": "算力租赁与调度", "description": "GPU算力资源池化，按需弹性使用，大幅降低成本" },
+              { "title": "模型训练与微调", "description": "基于企业数据的大模型微调，打造专属AI模型" },
+              { "title": "模型部署与运维", "description": "模型服务化部署、性能监控、持续优化" },
+              { "title": "AI应用开发", "description": "智能问答、文档分析、图像识别等AI应用定制开发" }
+            ]
+          },
+          {
+            "id": "data-governance",
+            "icon": "📊",
+            "title": "数据治理与智能运维",
+            "description": "建立完善的数据治理体系，包括数据标准、数据质量、数据安全与数据资产化，结合智能运维确保系统稳定高效运行。",
+            "detailType": "service",
+            "detailList": [
+              { "title": "数据标准建设", "description": "制定企业数据字典、数据模型、数据质量规范" },
+              { "title": "数据安全管控", "description": "数据分级分类、访问控制、审计追溯、合规管理" },
+              { "title": "数据资产化", "description": "数据资产评估、定价、交易机制设计与实施" },
+              { "title": "智能运维", "description": "AIOps智能监控、故障预测、自动修复" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "products": [
+    { "id": "digital-consulting-product", "icon": "🎯", "title": "数字化转型咨询", "description": "DESC方法论驱动的系统性诊断与规划", "detailType": "service", "detailList": [
+      { "title": "诊断评估", "description": "全面评估企业数字化现状，识别关键痛点和改进机会" },
+      { "title": "战略规划", "description": "制定符合企业实际的数字化转型战略和路线图" },
+      { "title": "落地指导", "description": "全程跟踪指导，确保战略有效落地" }
+    ]},
+    { "id": "expert-resources", "icon": "👨‍🔬", "title": "专家资源", "description": "高校教授与行业专家智库，按需匹配", "detailType": "expert", "detailList": [
+      { "name": "张教授", "field": "企业管理", "experience": "25年", "description": "复旦大学管理学院教授" },
+      { "name": "李教授", "field": "人工智能", "experience": "18年", "description": "上海交通大学AI研究院" }
+    ]},
+    { "id": "digital-co-creation", "icon": "🤝", "title": "数字共创", "description": "与企业深度合作，共建数字化解决方案", "detailType": "service", "detailList": [
+      { "title": "联合创新实验室", "description": "与企业共建联合实验室，共同探索数字化创新场景" },
+      { "title": "方案共创", "description": "基于企业实际需求，定制开发专属数字化解决方案" }
+    ]},
+    { "id": "business-opportunity", "icon": "📈", "title": "商机共享", "description": "生态内企业资源对接与业务协同", "detailType": "service", "detailList": [
+      { "title": "资源对接", "description": "撮合生态内企业的供需匹配和业务合作" },
+      { "title": "渠道共享", "description": "整合各企业渠道资源，实现互利共赢" }
+    ]},
+    { "id": "financial-sharing", "icon": "💰", "title": "财务共享", "description": "标准化财务流程，降本增效", "detailType": "service", "detailList": [
+      { "title": "核算共享", "description": "标准化会计核算流程，集中处理日常财务事务" },
+      { "title": "资金管理", "description": "统一资金池管理，优化资金使用效率" }
+    ]},
+    { "id": "hr-sharing", "icon": "👥", "title": "人资共享", "description": "灵活用工与人才管理一体化服务", "detailType": "service", "detailList": [
+      { "title": "招聘外包", "description": "大批量、短时间招聘管理，提升招聘效率" },
+      { "title": "薪酬管理", "description": "跨地区一键算薪，灵活处理各类薪税场景" }
+    ]},
+    { "id": "it-sharing", "icon": "💻", "title": "IT共享", "description": "基础设施、运维与技术支持统一输出", "detailType": "service", "detailList": [
+      { "title": "基础设施共享", "description": "服务器、网络、存储等基础设施统一管理与分配" },
+      { "title": "运维服务", "description": "7×24小时运维监控、故障处理、性能优化" }
+    ]},
+    { "id": "data-assets", "icon": "📊", "title": "数据资产", "description": "数据治理、资产定价与价值变现", "detailType": "service", "detailList": [
+      { "title": "数据治理", "description": "建立数据标准、质量管理、安全管控体系" },
+      { "title": "资产定价", "description": "数据资产评估模型与定价机制" },
+      { "title": "价值变现", "description": "数据产品化、数据交易撮合" }
+    ]}
+  ],
+  "clients": {
+    "categories": ["全部", "金融", "互联网", "智能制造"],
+    "items": [
+      { "name": "平安租赁", "category": "金融", "logo": "" },
+      { "name": "海发宝诚租赁", "category": "金融", "logo": "" },
+      { "name": "中宏保险", "category": "金融", "logo": "" },
+      { "name": "太平洋保险", "category": "金融", "logo": "" },
+      { "name": "普洛斯金融", "category": "金融", "logo": "" },
+      { "name": "阿里巴巴", "category": "互联网", "logo": "" },
+      { "name": "有赞科技", "category": "互联网", "logo": "" },
+      { "name": "上汽集团", "category": "智能制造", "logo": "" }
+    ]
+  },
+  "advantages": [
+    { "icon": "🌐", "title": "全国驻场覆盖", "description": "提供全国所有地区的驻场服务，一线城市及江浙地区具备离岸ODC覆盖能力，随时提供办公场所与快速搭建交付团队。" },
+    { "icon": "📋", "title": "成熟项目管理", "description": "依靠成熟的项目管理体系及交付管理体系，采用敏捷或瀑布模型，确保项目按时、按质完成交付。" },
+    { "icon": "⚡", "title": "敏捷研发能力", "description": "持续评估和改进研发管理流程，实施代码审查、测试、缺陷管理等质量保证措施，所有软件自主研发。" },
+    { "icon": "🔒", "title": "信息安全体系", "description": "完善的信息安全管理体系，包括访问控制、数据加密、系统容灾、安全审计，确保客户数据安全无忧。" },
+    { "icon": "🎓", "title": "人才培养体系", "description": "内部培训、外部培训与集中培训结合，完善的薪酬福利与员工关怀体系，确保团队稳定与持续成长。" },
+    { "icon": "🕐", "title": "7×24小时响应", "description": "提供7×24小时紧急事件服务响应，2小时内做出实质响应，2-8小时到达现场，确保业务连续性。" }
+  ],
+  "qinboshi": {
+    "mission": "在\"十五五\"时代浪潮中，勤博士AI数字共创中心以AI+数字化为核心驱动力，采用<strong>To B与To C双轮驱动模式</strong>，一方面为企业提供数字化转型服务，另一方面为个人提供AI技能重塑，形成业务闭环。",
+    "dualDrive": {
+      "business": {
+        "label": "To B 企业赋能",
+        "title": "数字化转型服务",
+        "items": [
+          "全景数字化技术服务",
+          "AI算力与模型服务",
+          "数据治理与智能运维",
+          "企业管理咨询与流程优化",
+          "定制化数字解决方案",
+          "数字化成熟度评估"
+        ]
+      },
+      "consumer": {
+        "label": "To C 个人成长",
+        "title": "AI技能重塑",
+        "items": [
+          "AI技能培训与认证",
+          "校企联合协同育人",
+          "产学研深度融合实践",
+          "技术转移转化服务",
+          "AI人才蓄水池建设",
+          "职业发展持续赋能"
+        ]
+      }
+    },
+    "strategy": [
+      { "step": "第一步 · 2026-2027", "title": "区域标杆", "description": "深耕长三角区域，打造可复制的AI+数字化服务标杆案例，建立行业口碑与服务标准，完成商业模式验证。" },
+      { "step": "第二步 · 2027-2028", "title": "全国性平台", "description": "将成功模式向全国推广复制，建立覆盖主要经济区域的数字化服务网络，形成规模效应和品牌影响力。" },
+      { "step": "第三步 · 2028-2030", "title": "行业生态构建", "description": "构建AI+数字化人才与企业需求的精准匹配生态，成为行业标准的参与者和推动者，实现生态化发展。" }
+    ],
+    "ecosystem": {
+      "nodes": ["政府", "产业", "学术", "研究", "应用"],
+      "cards": [
+        { "title": "校企联合协同育人", "description": "与高校深度合作，共建AI与数字化人才培养体系，将企业实战需求引入课堂教学，培养符合市场需要的复合型人才。" },
+        { "title": "技术转移转化机制", "description": "建立高校科研成果与企业技术需求之间的高效对接机制，加速科研成果的市场化转化，实现产学研用闭环。" }
+      ]
+    },
+    "businessModel": [
+      { "icon": "💼", "title": "服务收费", "description": "管理咨询与数字化转型项目服务费" },
+      { "icon": "📚", "title": "培训收入", "description": "AI技能培训、认证课程与校企合作收入" },
+      { "icon": "🛠️", "title": "产品收入", "description": "数字系统SaaS订阅与数据资产服务收入" },
+      { "icon": "🤝", "title": "分成+补贴", "description": "项目收益分成与政府政策性补贴" }
+    ]
+  },
+  "about": {
+    "intro": {
+      "paragraph1": "上海爽勤管理咨询有限公司成立于2019年，位于上海嘉定，发起人秦志勇博士，IT老兵，致力于企业数字化转型研究，深耕电商、融资租赁、银行保险领域很多年，致力为中小企业提供数字转型服务，提升企业在多变国际环境中的市场竞争力。",
+      "paragraph2": "公司构建了完善的组织架构，涵盖咨询部、研发部、项目部、管理部、协同部五大核心部门，拥有专家组、教练组、数字组、数据组、实施组、质量组等专业团队，确保每一个项目从需求分析到交付落地都有专业团队全程护航。"
+    },
+    "departments": [
+      { "icon": "🎯", "title": "咨询部", "description": "专家组、教练组 — 由高校知名教授和行业专家组成，提供管理咨询与数字化战略规划。" },
+      { "icon": "💻", "title": "研发部", "description": "数字组、数据组 — 负责数字系统研发、数据治理、AI模型服务与技术创新。" },
+      { "icon": "📋", "title": "项目部", "description": "实施组、质量组 — 采用成熟项目管理体系，确保项目按时、按质交付。" },
+      { "icon": "👥", "title": "管理部", "description": "人资组、财务组 — 完善的人才培养、薪酬福利与员工关怀体系。" },
+      { "icon": "🔗", "title": "协同部", "description": "跨部门协同与资源调配，确保各项目团队高效运转。" },
+      { "icon": "🛡️", "title": "质量与安全", "description": "质量管理体系、EHS管理体系、信息安全管理体系三位一体。" }
+    ],
+    "founder": {
+      "name": "秦志勇博士",
+      "title": "IT老兵，数字化转型践行者",
+      "description1": "秦志勇博士是上海爽勤管理咨询有限公司的创始人，一位深耕IT行业多年的资深从业者。凭借对技术的深刻理解和对企业数字化转型的独到见解，秦博士带领团队在电商、融资租赁、银行保险等领域积累了丰富的实战经验。",
+      "description2": "他创立\"勤博士AI数字共创中心\"品牌，致力于将AI技术与数字化能力深度融合，为中小企业提供从战略咨询到技术落地的一站式服务，推动产学研协同创新。",
+      "stats": [
+        { "number": "20+", "label": "年IT行业经验" },
+        { "number": "3", "label": "大核心行业深耕" },
+        { "number": "100+", "label": "项目成功交付" }
+      ]
+    },
+    "capabilities": [
+      { "icon": "🏢", "title": "全国驻场服务", "description": "提供全国所有地区的驻场服务（主要指人力外包），一线城市和江浙地区具备离岸ODC城市的覆盖能力，可随时提供10-20人左右的办公场所。" },
+      { "icon": "🚀", "title": "快速团队搭建", "description": "根据客户需求，可以快速搭建交付团队，依靠成熟的项目管理体系及交付管理体系，确保交付项目质量。" }
+    ]
+  },
+  "delivery": [
+    { "icon": "🔄", "title": "敏捷/瀑布双模式", "description": "根据项目特点灵活采用敏捷开发或瀑布模型，确保项目按时、按质完成。" },
+    { "icon": "✅", "title": "全面质量管控", "description": "代码审查、测试、缺陷管理、持续改进 — 实施全方位质量保证措施。" },
+    { "icon": "🔒", "title": "安全与合规", "description": "EHS管理体系与信息安全体系双重保障，数据加密、访问控制、系统容灾全覆盖。" }
+  ],
+  "partners": [
+    { "icon": "🏦", "title": "金融科技", "logo": "", "description": "平安租赁、海发宝诚租赁、中宏保险、太平洋保险、普洛斯金融等金融领域领军企业。" },
+    { "icon": "🏪", "title": "商业公司", "logo": "", "description": "覆盖电商、零售、服务等行业的商业企业，提供定制化数字化转型方案。" },
+    { "icon": "🔗", "title": "中介平台", "logo": "", "description": "与各类平台型企业合作，共同构建数字化服务生态，实现资源共享与价值共创。" }
+  ]
+}
